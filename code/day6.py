@@ -18,7 +18,6 @@ for i, time in enumerate(times):
 
 print("Part 1:", part_1)
 
-new_time = ''.join([str(x) for x in times])
-new_distance = ''.join([str(x) for x in distances])
+new_time, new_distance = [''.join([str(x) for x in y]) for y in [times, distances]]
 part_2 = calc_ways(int(new_time), int(new_distance))
 print("Part 2:", part_2)
